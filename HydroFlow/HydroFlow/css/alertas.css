@@ -1,0 +1,120 @@
+/* ======================= SECCIÓN DE ALERTAS Y FUGAS ======================= */
+
+.alert-management-dashboard {
+    background-color: #fcfcfc;
+    padding: 40px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.alert-management-dashboard h2 {
+    color: #c0392b; /* Rojo para destacar el enfoque en la alerta */
+    margin-bottom: 5px;
+    font-size: 2.2em;
+}
+
+/* --- Resumen de Alertas (KPIs) --- */
+.alert-summary {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.summary-card {
+    flex: 1;
+    padding: 20px 15px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+.summary-value {
+    display: block;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.summary-label {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+/* Colores de Prioridad para el Resumen */
+.high-priority { background-color: #e74c3c; } /* Rojo */
+.medium-priority { background-color: #f39c12; } /* Naranja */
+.low-priority { background-color: #2ecc71; } /* Verde (Resueltas) */
+
+
+/* --- Lista Detallada de Alertas --- */
+.alert-list-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
+
+.alert-list-container h3 {
+    color: #34495e;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.alert-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px dashed #eee;
+    transition: background-color 0.2s;
+}
+
+.alert-item:last-child {
+    border-bottom: none;
+}
+
+.alert-item:hover {
+    background-color: #f9f9f9;
+}
+
+.alert-icon {
+    font-size: 1.5em;
+    padding-right: 15px;
+}
+
+.alert-details {
+    flex-grow: 1;
+}
+
+.alert-title {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+.alert-time {
+    display: block;
+    font-size: 0.85em;
+    color: #777;
+}
+
+.alert-status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: white;
+}
+
+/* Colores específicos de las alertas */
+.high-alert .alert-icon { color: #e74c3c; } /* Rojo */
+.high-alert-status { background-color: #c0392b; }
+
+.medium-alert .alert-icon { color: #f39c12; } /* Naranja */
+.medium-alert-status { background-color: #e67e22; }
+
+.low-alert .alert-icon { color: #2ecc71; } /* Verde */
+.low-alert-status { background-color: #27ae60; }

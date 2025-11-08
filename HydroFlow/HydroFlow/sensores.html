@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sensores.css">
+</head>
+<body>
+    <section id="sensores" class="sensor-management-dashboard">
+    <h2>Gestión Remota de Sensores ⚙️</h2>
+    <p class="subtitle">Monitoreo del estado, precisión y control de calibración de sus dispositivos.</p>
+
+    <div class="sensor-summary">
+        <div class="summary-card online-status">
+            <span class="summary-value">18/20</span>
+            <span class="summary-label">Sensores Online</span>
+        </div>
+        <div class="summary-card calibration-due">
+            <span class="summary-value">3</span>
+            <span class="summary-label">Calibración Pendiente</span>
+        </div>
+        <div class="summary-card issue-status">
+            <span class="summary-value">1</span>
+            <span class="summary-label">Dispositivo con Fallo (Offline)</span>
+        </div>
+    </div>
+
+    <div class="sensor-table-container">
+        <h3>Inventario de Dispositivos</h3>
+        
+        <table class="sensor-table">
+            <thead>
+                <tr>
+                    <th>ID Dispositivo</th>
+                    <th>Ubicación</th>
+                    <th>Estado</th>
+                    <th>Última Calibración</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="sensor-row online">
+                    <td>#HF-8923</td>
+                    <td>Cocina Principal</td>
+                    <td class="status-ok">Operando (99%)</td>
+                    <td>2024-09-15</td>
+                    <td><button class="action-button primary">Calibrar Ahora</button></td>
+                </tr>
+                
+                <tr class="sensor-row warning">
+                    <td>#HF-5011</td>
+                    <td>Patio Exterior</td>
+                    <td class="status-warning">Desviación (2%)</td>
+                    <td>2023-11-20</td>
+                    <td><button class="action-button warning">Programar Calibración</button></td>
+                </tr>
+                
+                <tr class="sensor-row critical">
+                    <td>#HF-3305</td>
+                    <td>Sótano (Medidor Gral.)</td>
+                    <td class="status-critical">Offline (Fallo Conexión)</td>
+                    <td>2024-08-01</td>
+                    <td><button class="action-button critical">Diagnóstico Remoto</button></td>
+                </tr>
+
+                <tr class="sensor-row online">
+                    <td>#HF-7100</td>
+                    <td>Oficina 2da Planta</td>
+                    <td class="status-ok">Operando (100%)</td>
+                    <td>2024-10-18</td>
+                    <td><button class="action-button primary">Reiniciar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+</body>
+</html>

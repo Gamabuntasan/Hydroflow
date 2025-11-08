@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HydroFlow - Crear Cuenta</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpg" href="img/logo_principal.jpg"> 
+    
+    <!-- ============================================= -->
+    <!-- CÓDIGO DE CONEXIÓN A FIREBASE (CDN COMPAT) -->
+    <!-- (DEBE SER EL MISMO QUE EN login.html) -->
+        <!-- Firebase App (la base) es siempre necesaria y debe ser primera -->
+        <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app-compat.js"></script>
+        <!-- Agrega los productos de Firebase que quieras usar -->
+        <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore-compat.js"></script>
+    
+    <script>
+             // Your web app's Firebase configuration
+             const firebaseConfig = {
+                 apiKey: "AIzaSyAYgOv48OWDmoYLpFi67OIn08Q16eHsCn0",
+                 authDomain: "hydroflow-35522.firebaseapp.com",
+                 projectId: "hydroflow-35522",
+                 storageBucket: "hydroflow-35522.appspot.com",
+                 messagingSenderId: "765791344185",
+                 appId: "1:765791344185:web:b5f722299473b585165fe8"
+             };
+
+             // Initialize Firebase
+             if (!firebase.apps.length) {
+                 firebase.initializeApp(firebaseConfig);
+             }
+             const auth = firebase.auth();
+    </script>
+    <!-- ============================================= -->
+</head>
+
+<body>
+
+    <div>
+        <div>
+            <img class="logo" src="img/logo_principal.jpg" alt="logo_registro">
+            <h2>Crear una cuenta HydroFlow</h2>
+        </div>
+
+        <div>
+            <!-- CAMPO CORREO -->
+            <div>
+                <label for="register-email">Correo Electrónico</label>
+            </div> 
+            <div class="input-container">  
+                <!-- ID para la función crearCuenta() en main.js -->
+                <input class="input-container" id="register-email" placeholder="Ingresa tu correo" type="email">
+            </div>
+
+            <!-- CAMPO CONTRASEÑA -->
+            <div>
+                <label for="register-password">Contraseña (Mín. 6 caracteres)</label>
+            </div>
+            <div class="input-container">
+                <!-- ID para la función crearCuenta() en main.js -->
+                <input class="input-container" type="password" id="register-password" placeholder="Define tu contraseña">
+            </div>
+
+            <div>
+                <!-- BOTÓN PRINCIPAL DE REGISTRO -->
+                <button class="login-button" onclick="crearCuenta()">
+                    Registrarse
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <!-- Enlace para volver a Iniciar Sesión -->
+        <p>¿Ya tienes cuenta?</p>
+        <a href="index.html">Volver a Iniciar Sesión</a>
+    </div>
+
+    <!-- Tu archivo principal de JavaScript con la función crearCuenta() -->
+    <script src="js/main.js"></script>
+</body>
+</html>

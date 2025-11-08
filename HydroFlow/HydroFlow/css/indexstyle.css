@@ -1,0 +1,129 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Fondo general muy suave */
+    color: #333;
+}
+
+/* ======================= CONTENEDOR PRINCIPAL ======================= */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido */
+    padding: 20px;
+}
+
+/* ======================= HEADER ======================= */
+header {
+    background-color: #EFEFEE; /* Color oscuro para el header */
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #0A1020;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db; /* Un color de acento azul */
+}
+/* ======================= SECCIONES DE CONTENIDO ======================= */
+.hero-section {
+    background-color: white;
+    padding: 60px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.hero-section h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+.content-section {
+    background-color: white;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.content-section h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+}
+
+/* ======================= FOOTER ======================= */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos para Iconos Sociales */
+.social-icons {
+    margin-top: 15px;
+}
+
+.icon-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+    /* Estilo para el placeholder de icono */
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.icon-link:hover {
+    background-color: #3498db;
+}
+
+.icon-placeholder {
+    font-size: 0.7em; /* Texto más pequeño dentro del círculo */
+}

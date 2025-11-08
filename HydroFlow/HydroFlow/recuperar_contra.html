@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recuperar contraseña</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpg" href="img/logo_principal.jpg">
+
+    <!-- Firebase scripts -->
+    <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth-compat.js"></script>
+
+    <script>
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAYgOv48OWDmoYLpFi67OIn08Q16eHsCn0",
+            authDomain: "hydroflow-35522.firebaseapp.com",
+            projectId: "hydroflow-35522",
+            storageBucket: "hydroflow-35522.appspot.com",
+            messagingSenderId: "765791344185",
+            appId: "1:765791344185:web:b5f722299473b585165fe8"
+        };
+
+        // Initialize Firebase
+        if (!firebase.apps.length) {
+            firebase.initializeApp(firebaseConfig);
+        }
+        const auth = firebase.auth();
+    </script>
+</head>
+<body>
+    <div>
+        <div>
+            <img class="logo" src="img/logo_principal.jpg" alt="logo_login">
+        </div>
+        <div>
+            <label for="correo">Ingrese su correo electrónico</label>
+        </div>
+        <div class="input-container">
+            <input class="input-container" id="correo" type="text" placeholder="ejemplo@correo.com">
+            <input class="login-button" type="button" value="Enviar correo" onclick="enviarResetPassword()">
+        </div>
+        
+    </div>
+
+    <!-- Script principal -->
+    <script src="js/main.js"></script>
+</body>
+</html>

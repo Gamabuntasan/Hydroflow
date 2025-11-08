@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body style="background-color: #0A1020;">
+    <main class="container">
+    
+    <section id="quienes-somos" class="hero-section">
+        </section>
+
+    <section class="feature-menu-section">
+        <h2>Nuestras Soluciones Clave</h2>
+        <p class="subtitle">Descubra el control total que HydroFlow le ofrece en una interfaz simple y potente.</p>
+        
+        <div class="feature-menu-tabs">
+            
+            <div class="feature-tab active" onclick="navegarA('consumo.html');" style="cursor: pointer;" tabindex="0">
+                <i class="fas fa-chart-line"></i> <span class="tab-title">Consumo en Tiempo Real</span>
+                <p>Visualización constante del flujo hídrico.</p>
+            </div>
+            
+            <div class="feature-tab alert-tab" onclick="navegarA('alertas.html');" style="cursor: pointer;" tabindex="0">
+                <i class="fas fa-exclamation-triangle"></i> <span class="tab-title">Alerta y Detección de Fugas</span>
+                <p>Notificaciones inmediatas ante cualquier anomalía o pérdida.</p>
+            </div>
+            
+            <div class="feature-tab" onclick="navegarA('sensores.html');" style="cursor: pointer;" tabindex="0">
+                <i class="fas fa-tools"></i> <span class="tab-title">Gestión Remota de Sensores</span>
+                <p>Calibre y diagnostique sus dispositivos desde la web.</p>
+            </div>
+            
+            <div class="feature-tab" onclick="navegarA('reportes.html');" style="cursor: pointer;" tabindex="0">
+                <i class="fas fa-file-alt"></i> <span class="tab-title">Reportes Detallados</span>
+            <p>Análisis de consumo por períodos y oportunidades de ahorro.</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="content-section">
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

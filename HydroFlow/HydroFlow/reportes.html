@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reportes.css">
+</head>
+<body>
+    <section id="reportes" class="reports-analytics-dashboard">
+    <h2>Reportes Detallados y Analíticas 📊</h2>
+    <p class="subtitle">Genere informes personalizados, evalúe la eficiencia y detecte oportunidades de ahorro.</p>
+
+    <div class="report-metrics">
+        <div class="metric-card savings-metric">
+            <i class="fas fa-hand-holding-usd"></i>
+            <span class="metric-value">+ $320</span>
+            <span class="metric-label">Ahorro Estimado (vs. Mes Ant.)</span>
+        </div>
+        <div class="metric-card efficiency-metric">
+            <i class="fas fa-chart-pie"></i>
+            <span class="metric-value">98.5%</span>
+            <span class="metric-label">Eficiencia Hídrica General</span>
+        </div>
+        <div class="metric-card leak-metric">
+            <i class="fas fa-clipboard-list"></i>
+            <span class="metric-value">5</span>
+            <span class="metric-label">Informes de Fugas Generados</span>
+        </div>
+    </div>
+
+    <div class="report-generator-box">
+        <h3>Generador de Informes Personalizados</h3>
+        <div class="form-row">
+            <select name="report-type" class="report-select">
+                <option value="consumo">Informe de Consumo por Zona</option>
+                <option value="fugas">Historial de Fugas y Alertas</option>
+                <option value="sensores">Estado de Calibración de Sensores</option>
+                <option value="eficiencia">Análisis de Eficiencia Mensual</option>
+            </select>
+            <input type="date" value="2024-09-01" class="report-date-input">
+            <input type="date" value="2024-09-30" class="report-date-input">
+        </div>
+        <button class="generate-button" onclick="imprimirPDFVacio()">Generar Reporte PDF <i class="fas fa-download"></i></button>
+    </div>
+
+    <div class="recent-report-list">
+        <h3>Reportes Recientes</h3>
+        <ul>
+            <li>
+                <span class="report-name">Análisis de Desviación Semanal</span>
+                <span class="report-date">Creado: 2024-10-21</span>
+                <span class="report-action download-link"><i class="fas fa-file-pdf"></i> Descargar</span>
+            </li>
+            <li>
+                <span class="report-name">Consumo por Departamento Q3</span>
+                <span class="report-date">Creado: 2024-10-15</span>
+                <span class="report-action download-link"><i class="fas fa-file-pdf"></i> Descargar</span>
+            </li>
+        </ul>
+    </div>
+
+</section>
+<script src="js/main.js"></script>
+</body>
+</html>

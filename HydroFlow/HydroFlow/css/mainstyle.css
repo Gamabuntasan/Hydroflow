@@ -1,0 +1,83 @@
+/* ======================= SECCIÓN DE MENÚ DE FUNCIONALIDADES ======================= */
+
+.feature-menu-section {
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.feature-menu-section h2 {
+    color: aquamarine; /* Color principal de HydroFlow */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.feature-menu-section .subtitle {
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.feature-menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las tarjetas */
+    flex-wrap: wrap; /* Para que funcione bien en móviles */
+}
+
+.feature-tab {
+    background-color: white;
+    padding: 25px 20px;
+    width: 23%; /* Ocupa casi un cuarto del contenedor para 4 elementos */
+    min-width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid forestgreen; /* Borde inferior sutil */
+    transition: transform 0.3s, box-shadow 0.3s, border-bottom 0.3s;
+}
+
+.feature-tab:hover {
+    transform: translateY(-5px); /* Pequeño levantamiento al pasar el mouse */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para el ítem activo/principal */
+.feature-tab.active {
+    border-bottom-color: #3498db; /* Azul de acento */
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* Estilo especial para la alerta (Detección de Fugas) */
+.alert-tab {
+    border-bottom-color: #e74c3c; /* Rojo de alerta */
+}
+
+/* Estilo de los Iconos */
+.feature-tab i {
+    font-size: 2.5em;
+    color: #004c8c; /* Color principal */
+    margin-bottom: 15px;
+    display: block;
+}
+
+.alert-tab i {
+    color: #e74c3c; /* Icono de alerta en rojo */
+}
+
+/* Estilo del Título */
+.feature-tab .tab-title {
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Estilo de la Descripción */
+.feature-tab p {
+    font-size: 0.9em;
+    color: #777;
+    line-height: 1.4;
+}

@@ -1,0 +1,57 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+.logo{
+    height: 20vh;
+    width: 20vh;
+    border-radius: 25px;
+    margin-bottom: 10vh;
+}
+
+.main-container{
+    display:grid;
+    place-items: center;
+    background-color: aquamarine;
+}
+
+.input-container{
+    width: 100%;
+    display: grid;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    box-sizing: border-box;
+    background-color: #EFEFEE;
+    outline: none;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.div-container-input{
+    display: grid;
+    place-items: center;
+    outline: none;
+    
+}
+
+.login-button{
+    font-weight: bolder;
+    font-size: large;
+    color: aliceblue;
+    border-style: none;
+    background-color: #0A1020;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+div{
+    display: block;
+}
+

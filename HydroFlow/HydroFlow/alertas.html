@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/alertas.css">
+</head>
+<body>
+    <section id="alertas" class="alert-management-dashboard">
+    <h2>Alertas y Detección de Fugas</h2>
+    <p class="subtitle">Historial de anomalías hídricas detectadas y estado de resolución.</p>
+
+    <div class="alert-summary">
+        <div class="summary-card high-priority">
+            <span class="summary-value">2</span>
+            <span class="summary-label">Fugas Activas (Alta Prioridad)</span>
+        </div>
+        <div class="summary-card medium-priority">
+            <span class="summary-value">4</span>
+            <span class="summary-label">Anomalías Pendientes</span>
+        </div>
+        <div class="summary-card low-priority">
+            <span class="summary-value">45</span>
+            <span class="summary-label">Alertas Resueltas (Últimos 30 días)</span>
+        </div>
+    </div>
+
+    <div class="alert-list-container">
+        <h3>Últimas Detecciones</h3>
+        
+        <div class="alert-item high-alert">
+            <div class="alert-icon"><i class="fas fa-exclamation-circle"></i></div>
+            <div class="alert-details">
+                <span class="alert-title">Fuga Crítica Detectada - Zona de Riego 1</span>
+                <span class="alert-time">Hace 35 min - 1.8 L/min sostenido</span>
+            </div>
+            <div class="alert-action">
+                <span class="alert-status high-alert-status">URGENTE</span>
+            </div>
+        </div>
+
+        <div class="alert-item medium-alert">
+            <div class="alert-icon"><i class="fas fa-bell"></i></div>
+            <div class="alert-details">
+                <span class="alert-title">Consumo Nocturno Anómalo</span>
+                <span class="alert-time">Hace 3 horas - Posible goteo lento</span>
+            </div>
+            <div class="alert-action">
+                <span class="alert-status medium-alert-status">PENDIENTE</span>
+            </div>
+        </div>
+</body>
+</html>
